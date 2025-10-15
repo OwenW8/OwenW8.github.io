@@ -1,0 +1,100 @@
+/* You can add custom CSS and extend Boostrap styles in this file. Remember, Bootstrap is just CSS at the end of the day! */
+
+#hero-section {
+  display: inline-block;
+  background-color: black;
+  display: relative;
+  width: 100vw;
+  margin:auto;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.8)), url("https://images.unsplash.com/photo-1718062455469-550f7f6026fc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE0fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D");  
+}
+
+#hero-section h1, h2 {
+  width: 40vw;
+  margin: .5vh 30vw 0px 30vw;
+  font-size: 5vw;
+  text-align: center;
+  color: whitesmoke;
+}
+
+#hero-section div {
+  height: 20vh;
+}
+#hero-section #subtitle {
+  font-size: 1.5vw;
+  color: whitesmoke;
+}
+
+#hero-section #head-shot{
+  width: 20vw;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  margin: 10vh 40vw 0px 40vw;
+  border-width: .1vh;
+  border: solid;
+  border-color: white;
+  padding: 0%;
+}
+
+#mission-section  img {
+  float: left;
+  padding-right: 0px;  
+  padding-left: 0px;
+ padding-bottom: 20px;
+  object-position: center;
+  object-fit: cover;
+  overflow: hidden;
+  max-height:800px;
+
+}
+
+#mission-section p {
+  font-size: 2vh;
+}
+
+#mission-section h1 {
+  text-align: center;
+  font-size: 3vw;
+}
+
+#mission-section {
+  height:fit-content;
+}
+
+#skills-section h1{
+  text-align: center;
+}
+
+#contact-section {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: lightblue;
+  padding: 40px;
+}
+
+i {
+  font-size: 100px;
+}
+
+i:hover {
+  color: violet;
+}
+
+#carouselExampleCaptions img{
+  aspect-ratio: 2;
+}
+
+#footer-section {
+  background-color: black;
+  color: white;
+  position: relative;
+  bottom: 0px;
+  bottom: 0; 
+  left: 0; 
+  width: 100vw;
+  height: 4vw;
+  text-align: center;
+  font-size: 2vw;
+}
