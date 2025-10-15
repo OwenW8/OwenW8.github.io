@@ -7,7 +7,7 @@ def home_page_view(request):
         "inventory_list": ["Widget 1", "Widget 2", "Wedget 3"],
         "greeting": "THAnk you FOR visitING",
     }
-    return render(request, "home.html", context)
+    return render(request, "index.html", context)
 
 class AboutPageView(TemplateView):
     template_name = "about.html"
