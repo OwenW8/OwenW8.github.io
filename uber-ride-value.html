@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UberRideValue Project Detail</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Owen W. Miller</a>
+          <div class="collapse navbar-collapse show" id="mainNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html#projects">Projects</a></li>
+              <li class="nav-item"><a class="nav-link" href="https://github.com/OwenW8/UberRideValue" target="_blank" rel="noreferrer">GitHub Repo</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section detail-hero">
+        <div class="container">
+          <p class="eyebrow">Project Detail</p>
+          <h1>UberRideValue</h1>
+          <p class="detail-subtitle">
+            Analyzing Uber ride booking data to understand value drivers, pricing patterns, and cancellation behavior.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="https://github.com/OwenW8/UberRideValue" target="_blank" rel="noreferrer">View GitHub Repo</a>
+            <a class="btn btn-outline" href="index.html#projects">Back to Projects</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Summary</p>
+            <h3>What the project was trying to answer.</h3>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-copy">
+              <p>
+                This project analyzes Uber ride booking data to predict booking value and uncover the factors that influence pricing.
+                It also looks at what drives cancellations and incomplete rides so the business impact can be understood beyond a simple fare estimate.
+              </p>
+              <p>
+                The work combines exploratory analysis, modeling, and visual storytelling. The main takeaway is that ride distance and wait time are strongly connected to both price and cancellation outcomes, which creates a tradeoff between maximizing value and maintaining a reliable rider experience.
+              </p>
+            </div>
+
+            <div class="about-panel">
+              <h4>Key findings</h4>
+              <ul>
+                <li>Ride distance and trip time are strong pricing drivers.</li>
+                <li>Long pickup waits are strongly associated with cancellations.</li>
+                <li>Customer ratings declined over time, signaling reliability issues.</li>
+                <li>Decision tree models were chosen because the relationships were not linear.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Visuals</p>
+            <h3>Insights pulled directly from the project.</h3>
+          </div>
+
+          <div class="project-detail-grid">
+            <figure class="detail-card">
+              <img src="https://raw.githubusercontent.com/OwenW8/UberRideValue/main/assets/BookingValues.png" alt="Decision tree for booking values" />
+              <figcaption>Booking value regression tree showing the main pricing drivers.</figcaption>
+            </figure>
+
+            <figure class="detail-card">
+              <img src="https://raw.githubusercontent.com/OwenW8/UberRideValue/main/assets/BookingStatus.png" alt="Decision tree for booking status" />
+              <figcaption>Booking status model highlighting cancellation patterns and long-wait effects.</figcaption>
+            </figure>
+
+            <figure class="detail-card">
+              <img src="https://raw.githubusercontent.com/OwenW8/UberRideValue/main/assets/Booking_Value_vs_Avg_CTAT.png" alt="Booking value versus average trip duration" />
+              <figcaption>Booking value versus average trip duration shows why a linear approach was not suitable.</figcaption>
+            </figure>
+
+            <figure class="detail-card">
+              <img src="https://raw.githubusercontent.com/OwenW8/UberRideValue/main/assets/YearlyAVGRatingsTableu.png" alt="Yearly average ratings chart" />
+              <figcaption>Average ratings declined over time, reflecting service quality and reliability concerns.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Analytical takeaway</p>
+            <h3>What the analysis suggests.</h3>
+          </div>
+
+          <div class="insight-blocks">
+            <div class="insight-box">
+              <h4>Pricing and value</h4>
+              <p>
+                Ride distance, travel time, and booking context are the strongest contributors to booking value.
+                That makes pricing highly dependent on trip characteristics rather than a single simple factor.
+              </p>
+            </div>
+            <div class="insight-box">
+              <h4>Cancellation risk</h4>
+              <p>
+                A key pattern is that long pickup waits drive more incomplete rides and no-driver-found outcomes.
+                This suggests a practical operational threshold for better matching and ride assignment.
+              </p>
+            </div>
+            <div class="insight-box">
+              <h4>Customer experience</h4>
+              <p>
+                The long-run rating trend indicates that service reliability matters just as much as revenue and trip efficiency.
+                Better cancellation management would likely improve both satisfaction and retention.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2026 Owen W. Miller</p>
+      </div>
+    </footer>
+  </body>
+</html>
